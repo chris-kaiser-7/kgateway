@@ -4,7 +4,7 @@ package tests
 
 import (
 	"github.com/kgateway-dev/kgateway/v2/test/e2e"
-	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/inferenceextension"
+	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/inference"
 )
 
 func InferenceExtensionSuiteRunner() e2e.SuiteRunner {
