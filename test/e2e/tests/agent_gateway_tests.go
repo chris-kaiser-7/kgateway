@@ -12,12 +12,12 @@ import (
 	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/configmap"
 	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/csrf"
 	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/extauth"
+	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/inference"
 	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/jwtauth"
 	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/mcp"
 	global_rate_limit "github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/rate_limit/global"
 	local_rate_limit "github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/rate_limit/local"
 	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/rbac"
-	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/remotejwtauth"
 	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/agentgateway/transformation"
 	"github.com/kgateway-dev/kgateway/v2/test/e2e/features/backendtls"
 )
@@ -39,7 +39,7 @@ func AgentgatewaySuiteRunner() e2e.SuiteRunner {
 	agentgatewaySuiteRunner.Register("BasicAuth", basicauth.NewTestingSuite)
 	agentgatewaySuiteRunner.Register("ApiKeyAuth", apikeyauth.NewTestingSuite)
 	agentgatewaySuiteRunner.Register("JwtAuth", jwtauth.NewTestingSuite)
-	agentgatewaySuiteRunner.Register("RemoteJwtAuth", remotejwtauth.NewTestingSuite)
+	agentgatewaySuiteRunner.Register("Inference", inference.NewTestingSuite)
 
 	return agentgatewaySuiteRunner
 }
