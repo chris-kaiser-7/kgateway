@@ -2,7 +2,7 @@ apiVersion: inference.networking.k8s.io/v1
 kind: InferencePool
 metadata:
   name: vllm-llama3-8b-instruct
-  namespace: inf-ext-e2e
+  namespace: agent-gateway-test
 spec:
   targetPorts:
   - number: 8000

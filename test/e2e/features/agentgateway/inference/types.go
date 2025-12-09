@@ -1,6 +1,6 @@
 //go:build e2e
 
-package inferenceextension
+package inference
 
 import (
 	"net/http"
@@ -18,7 +18,7 @@ import (
 
 var (
 	// testNS is the namespace used for e2e tests. Test data manifests are hardcoded for this namespace.
-	testNS = "inf-ext-e2e"
+	testNS = "agent-gateway-test"
 	// vllmDeployName is the name of the vLLM deployment name
 	vllmDeployName = "vllm-llama3-8b-instruct"
 	// targetModelName is the model name value defined in an LLM request body.
